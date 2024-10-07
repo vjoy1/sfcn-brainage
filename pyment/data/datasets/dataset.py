@@ -1,15 +1,15 @@
 import numpy as np
 
-from abc import ABC, abstractproperty
+from abc import ABC, abstractmethod
 
 
 class Dataset(ABC):
-    @abstractproperty
+    @abstractmethod
     def y(self) -> np.ndarray:
         """Returns the target vector of the dataset"""
         pass
 
-    @abstractproperty
+    @abstractmethod
     def __len__(self) -> int:
         """Returns length of the dataset"""
         pass
